@@ -1,0 +1,184 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url(./images/bg.png);
+  background: repeat;
+  color: #000;
+}
+
+.master {
+  width: 948px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 948px;
+  float: left;
+  background-color: #dcd4c7;
+  padding-top: 37px;
+}
+
+.header > img {
+  width: 100%;
+  height: auto;
+}
+
+.navi {
+  float: left;
+  width: 170px;
+  margin-top: 10px;
+  margin-right: 15px;
+  height: 296px;
+}
+
+ul#navi {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+ul#navi li {
+  list-style: none;
+  font-weight: bold;
+  color: #727272;
+  font-variant: small-caps;
+}
+
+ul#navi a {
+  text-decoration: none;
+  color: black;
+}
+
+#active {
+  color: #968d80;
+}
+
+ul#navi a:hover {
+  color: #968d80;
+}
+
+.imghead {
+  float: left;
+}
+
+.imghead img {
+  max-width: 100%;
+  height: auto;
+}
+
+.float {
+  clear: both;
+  width: auto;
+}
+
+.content-links {
+  float: left;
+  width: 170px;
+  padding-right: 20px;
+  margin-top: 630px;
+  text-align: center;
+}
+
+#textbottom {
+  vertical-align: text-bottom;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.content-rechts {
+  float: left;
+  height: 720px;
+  width: 700px;
+  background-color: #c4b7a2;
+  padding: 2px 21px 10px 32px;
+  /* -- top left bottom right -- */
+}
+
+.b {
+  font-weight: bold;
+}
+
+.footer > img {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #968d80;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .master {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navi {
+    display: none;
+    width: 100%;
+    background-color: #dcd4c7;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    text-align: right;
+  }
+
+  .menu-toggle:checked + .mobile-menu-icon + .navibereich .navi {
+    display: block;
+  }
+
+  ul#navi {
+    text-align: left;
+    padding: 0;
+  }
+
+  ul#navi li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .content-rechts {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .header > img,
+  .imghead > img,
+  .footer > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content-links {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .footer img {
+    width: 100%;
+  }
+}
